@@ -1,25 +1,36 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Jumbotron from "./components/Jumbotron"
+import Navbar from "./components/NavBar"
+import Footer from "./components/Footer"
+import MyProjects from "./pages/MyProjects"
+import AboutMe from "./pages/AboutMe"
+import ContactMe from "./pages/ContactMe"
+import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+
+      <div className="App">
+
+        <Navbar />
+        <Jumbotron />
+
+          <Switch>
+          <Route exact path="/" component={AboutMe} />
+          <Route exact path="/projects" component={MyProjects} />
+          <Route exact path="/contactme" component={ContactMe} />
+
+          </Switch>
+
+
+        <Footer />
+      </div>
+    </Router>
+
   );
 }
 
