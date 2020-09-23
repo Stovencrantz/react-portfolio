@@ -1,57 +1,59 @@
 import React, { useState } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBLink, MDBNavbarToggler, MDBCollapse, MDBDropdown, MDBIcon, MDBTabPane, MDBTabContent } from "mdbreact";
 import MyProjects from "../../pages/MyProjects"
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
 function NavbarPage () {
 
-const [toggleState, setToggleState] = useState({isOpen: false});
+const [activePill, setActivePill] = useState({activeItemPill: "1"});
 
-function toggleCollapse () {
-  setToggleState({ isOpen: !toggleState.isOpen });
+// function togglePills () { 
+//   return tab => () => {
+//     if (activePill !== tab) {
+//       return setActivePill({
+//         activeItemPill: tab
+//       })
+//     }
+//   }
+// }
+
+function togglePills (tab) { 
+  if (activePill.activeItemPill !== tab) {
+    setActivePill({
+      activeItemPill: tab
+    })
+  }
+  console.log("activePill: ", activePill.activeItemPill)
+
+  console.log("tab: ", tab)
+
 }
 
 
+
   return (
-    // <Router>
       <MDBNavbar color="default-color" dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text">Portfolio</strong>
         </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={toggleState.isOpen} navbar>
           <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="/">About Me</MDBNavLink>
+            <MDBNavItem  className="tab tabId-1" active={activePill.activeItemPill === "1"} onClick={() => togglePills("1")} >
+              <MDBLink to="/" >Home</MDBLink>
             </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/projects" >Projects</MDBNavLink>
+            <MDBNavItem  className="tab tabId-2" active={activePill.activeItemPill === "2"} onClick={() => togglePills("2")} >
+              <MDBLink to="/aboutme" >About Me</MDBLink>
             </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="/contactme">Contact Me</MDBNavLink>
+            <MDBNavItem  className="tab tabId-3" active={activePill.activeItemPill === "3"} onClick={() => togglePills("3")}>
+              <MDBLink to="/projects" >Projects</MDBLink>
             </MDBNavItem>
-            {/* <MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <div className="d-none d-md-inline">Dropdown</div>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
-            </MDBNavItem> */}
+            <MDBNavItem  className="tab tabId-4" active={activePill.activeItemPill === "4"} onClick={() => togglePills("4")}>
+              <MDBLink to="/contactme" >Contact Me</MDBLink>
+            </MDBNavItem>
+
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            {/* <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#!">
-                <MDBIcon fab icon="twitter" />
-              </MDBNavLink>
-            </MDBNavItem> */}
+
             <MDBNavItem>
               <MDBNavItem className="waves-effect waves-light">
                 <a href="https://github.com/Stovencrantz?tab=repositories"> 
@@ -60,22 +62,10 @@ function toggleCollapse () {
               </MDBNavItem>
             </MDBNavItem>
             <MDBNavItem>
-              {/* <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="user" />
-                </MDBDropdownToggle>
-                <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown> */}
+
             </MDBNavItem>
           </MDBNavbarNav>
-        </MDBCollapse>
       </MDBNavbar>
-    // </Router>
     );
   }
 
