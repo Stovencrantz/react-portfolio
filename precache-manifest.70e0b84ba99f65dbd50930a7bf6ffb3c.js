@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "761e45e0773babe25656041135650fb3",
+    "revision": "bca538bc3315fa914f35a4f0c5e613da",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "38a41c1bb06b37ad7d85",
+    "revision": "55d27dc4c2d65218bd30",
     "url": "/react-portfolio/static/css/2.793baf1a.chunk.css"
   },
   {
-    "revision": "8a1e3790a940b26a93fe",
-    "url": "/react-portfolio/static/css/main.82bd946d.chunk.css"
+    "revision": "4a2bff27e0960d2d61b5",
+    "url": "/react-portfolio/static/css/main.07b58e1d.chunk.css"
   },
   {
-    "revision": "38a41c1bb06b37ad7d85",
-    "url": "/react-portfolio/static/js/2.25dcabbd.chunk.js"
+    "revision": "55d27dc4c2d65218bd30",
+    "url": "/react-portfolio/static/js/2.696f1f99.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/react-portfolio/static/js/2.25dcabbd.chunk.js.LICENSE.txt"
+    "url": "/react-portfolio/static/js/2.696f1f99.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a1e3790a940b26a93fe",
-    "url": "/react-portfolio/static/js/main.57e928c3.chunk.js"
+    "revision": "4a2bff27e0960d2d61b5",
+    "url": "/react-portfolio/static/js/main.ae0253ba.chunk.js"
   },
   {
     "revision": "aff33cef9dbb8787d6b3",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fcba13f5b23e5aeedfd8af85ea7dd2f5",
     "url": "/react-portfolio/static/media/Maine-landscape.fcba13f5.jpeg"
+  },
+  {
+    "revision": "cfeb5ecc40a0f8f5262d9cab892a85b8",
+    "url": "/react-portfolio/static/media/Maine-portrait.cfeb5ecc.jpeg"
   },
   {
     "revision": "11911410dca2de148f30954eb2fd5eab",
@@ -102,5 +106,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/react-portfolio/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "05550bdc164ddc04d2686e8649a2502c",
+    "url": "/react-portfolio/static/media/portrait.05550bdc.jpg"
   }
 ]);

@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.82bd946d.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.57e928c3.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.57e928c3.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.07b58e1d.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.ae0253ba.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.ae0253ba.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
     "static/css/2.793baf1a.chunk.css": "/react-portfolio/static/css/2.793baf1a.chunk.css",
-    "static/js/2.25dcabbd.chunk.js": "/react-portfolio/static/js/2.25dcabbd.chunk.js",
-    "static/js/2.25dcabbd.chunk.js.map": "/react-portfolio/static/js/2.25dcabbd.chunk.js.map",
+    "static/js/2.696f1f99.chunk.js": "/react-portfolio/static/js/2.696f1f99.chunk.js",
+    "static/js/2.696f1f99.chunk.js.map": "/react-portfolio/static/js/2.696f1f99.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.4123964b632fb1a14f5690aa5d6e8080.js": "/react-portfolio/precache-manifest.4123964b632fb1a14f5690aa5d6e8080.js",
+    "precache-manifest.70e0b84ba99f65dbd50930a7bf6ffb3c.js": "/react-portfolio/precache-manifest.70e0b84ba99f65dbd50930a7bf6ffb3c.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/css/2.793baf1a.chunk.css.map": "/react-portfolio/static/css/2.793baf1a.chunk.css.map",
-    "static/css/main.82bd946d.chunk.css.map": "/react-portfolio/static/css/main.82bd946d.chunk.css.map",
-    "static/js/2.25dcabbd.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.25dcabbd.chunk.js.LICENSE.txt",
+    "static/css/main.07b58e1d.chunk.css.map": "/react-portfolio/static/css/main.07b58e1d.chunk.css.map",
+    "static/js/2.696f1f99.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.696f1f99.chunk.js.LICENSE.txt",
     "static/media/Maine-landscape.jpeg": "/react-portfolio/static/media/Maine-landscape.fcba13f5.jpeg",
+    "static/media/Maine-portrait.jpeg": "/react-portfolio/static/media/Maine-portrait.cfeb5ecc.jpeg",
     "static/media/mdb.css": "/react-portfolio/static/media/arrow_right.8ef6a08c.svg",
     "static/media/all.min.css": "/react-portfolio/static/media/fa-solid-900.ee09ad75.woff",
-    "static/media/logo.svg": "/react-portfolio/static/media/logo.5d5d9eef.svg"
+    "static/media/logo.svg": "/react-portfolio/static/media/logo.5d5d9eef.svg",
+    "static/media/portrait.jpg": "/react-portfolio/static/media/portrait.05550bdc.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.213b1880.js",
     "static/css/2.793baf1a.chunk.css",
-    "static/js/2.25dcabbd.chunk.js",
-    "static/css/main.82bd946d.chunk.css",
-    "static/js/main.57e928c3.chunk.js"
+    "static/js/2.696f1f99.chunk.js",
+    "static/css/main.07b58e1d.chunk.css",
+    "static/js/main.ae0253ba.chunk.js"
   ]
 }
