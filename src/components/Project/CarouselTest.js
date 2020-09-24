@@ -1,25 +1,11 @@
-// import React from 'react';
-
-
-
-// function MyProjects() {
-//   return (
-//       <div>
-//             Now we are in our projects
-//       </div>
-//     );
-//   }
-
-// export default MyProjects;
-
 import React from "react";
-import {  MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask } from "mdbreact";
+import {  MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDContainer, MDBRow, MDBCol, MDBCardBody, MDBIcon, MDBBtn, MDBView, MDBMask, MDBContainer } from "mdbreact";
 
-const ProjectsPage = () => {
+const Carousel = () => {
   return (
     <section className="my-5">
         <h2 className="h1-responsive font-weight-bold text-center my-5">
-          Our best projects
+          My Projects
         </h2>
         <p className="grey-text w-responsive text-center mx-auto mb-5">
           Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -28,13 +14,49 @@ const ProjectsPage = () => {
           est laborum.
         </p>
 
-        <MDBRow>
+    <MDBContainer>
+    <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
-            <img
-              src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"
-              alt=""
-              className="img-fluid rounded z-depth-1"
-            />
+            <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true} className="z-depth-1">
+                <MDBCarouselItem itemId="1">
+                <MDBView>
+                    {/* <img
+                    className="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                    alt="First slide"
+                    /> */}
+                    <img
+                    src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"
+                    alt=""
+                    className="img-fluid rounded z-depth-1"
+                    />
+                    <MDBMask overlay="black-light" />
+                </MDBView>
+            <MDBCarouselCaption>
+                <h3 className="h3-responsive">Light mask</h3>
+                <p>First text</p>
+            </MDBCarouselCaption>
+            </MDBCarouselItem>
+            <MDBCarouselItem itemId="2">
+                <MDBView>
+                    {/* <img
+                    className="d-block w-100"
+                    src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                    alt="First slide"
+                    /> */}
+                    <img
+                    src="https://mdbootstrap.com/img/Photos/Others/images/83.jpg"
+                    alt=""
+                    className="img-fluid rounded z-depth-1"
+                    />
+                    <MDBMask overlay="black-light" />
+                </MDBView>
+            <MDBCarouselCaption>
+                <h3 className="h3-responsive">Light mask</h3>
+                <p>First text</p>
+            </MDBCarouselCaption>
+            </MDBCarouselItem>
+            </MDBCarousel>
           </MDBCol>
           <MDBCol lg="7">
             <MDBRow className="mb-3">
@@ -129,8 +151,9 @@ const ProjectsPage = () => {
             />
           </MDBCol>
         </MDBRow>
+    </MDBContainer>
       </section>
   );
 }
 
-export default ProjectsPage;
+export default Carousel;

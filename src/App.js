@@ -4,7 +4,7 @@ import './App.css';
 import Jumbotron from "./components/Jumbotron"
 import Navbar from "./components/NavBar"
 import Footer from "./components/Footer"
-import MyProjects from "./pages/MyProjects"
+import ProjectsPage from "./pages/ProjectsPage"
 import AboutMe from "./pages/AboutMe"
 import ContactMe from "./pages/ContactMe"
 import Home from "./pages/Home/Home"
@@ -17,15 +17,14 @@ function App() {
     <Router>
 
       <div className="App">
-
         <Navbar />
 
           <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path={["/", "/react-portfolio"]} component={Home} />
           <Route exact path="/aboutme" component={AboutMe} />
-          <Route exact path="/projects" component={MyProjects} />
+          <Route exact path="/projects" component={ProjectsPage} />
           <Route exact path="/contactme" component={ContactMe} />
-          <Route exact path="*" component={NoMatch} />
+          <Route component={NoMatch} />
 
           </Switch>
 

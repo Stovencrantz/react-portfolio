@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBLink, MDBNavbarToggler, MDBCollapse, MDBDropdown, MDBIcon, MDBTabPane, MDBTabContent } from "mdbreact";
-import MyProjects from "../../pages/MyProjects"
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -30,8 +29,6 @@ function togglePills (tab) {
 
 }
 
-
-
   return (
       <MDBNavbar color="default-color" dark expand="md">
         <MDBNavbarBrand>
@@ -55,9 +52,9 @@ function togglePills (tab) {
           <MDBNavbarNav right>
 
             <MDBNavItem>
-              <MDBNavItem className="waves-effect waves-light">
-                <a href="https://github.com/Stovencrantz?tab=repositories"> 
-                    <MDBIcon fab icon="github" />
+              <MDBNavItem className="waves-effect waves-light" >
+                <a href="https://github.com/Stovencrantz?tab=repositories" target="_blank"> 
+                    <MDBIcon fab icon="github" size = "lg" className="white-text" />
                 </a>
               </MDBNavItem>
             </MDBNavItem>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import maineLandscape from '../../images/Maine-landscape.jpeg'
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -49,7 +50,9 @@ function Home () {
     return (
       <div id='Home'>
         <MDBView
-          src={'https://mdbootstrap.com/img/Photos/Others/images/76.jpg'}
+          // src={'https://mdbootstrap.com/img/Photos/Others/images/76.jpg'}
+          // fixed
+          src={maineLandscape}
           fixed
         >
           <MDBMask className='rgba-white-light' />
@@ -58,13 +61,13 @@ function Home () {
             style={{ height: '100%', width: '100%', paddingTop: '15rem' }}
           >
             <MDBRow>
-              <MDBCol md='12' className='mb-4 white-text text-center'>
-                <h1 className='display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold'>
+              <MDBCol md='12' className='mb-4  text-center'>
+                <h1 className='black-text display-3 mb-0 pt-md-5 pt-5 font-weight-bold '>
                   Steve
-                  <span className='indigo-text font-weight-bold'> Knapp</span>
+                  <span className='teal-text font-weight-bold'> Knapp</span>
                 </h1>
                 <hr className='hr-light my-4' />
-                <h5 className='text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold'>
+                <h5 className='text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 black-text font-weight-bold'>
                   SOFTWARE DEVELOPER
                 </h5>
                 <MDBBtn
@@ -83,7 +86,7 @@ function Home () {
           <MDBContainer>
             <MDBRow className='py-5'>
               <MDBCol md='12' className='text-center'>
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -136,7 +139,7 @@ function Home () {
                   iure reprehenderit qui in ea voluptate velit esse quam nihil
                   molestiae consequatur, vel illum qui dolorem eum fugiat quo
                   voluptas nulla pariatur?
-                </p>
+                </p> */}
               </MDBCol>
             </MDBRow>
           </MDBContainer>
