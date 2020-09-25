@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import maineLandscape from '../../images/Maine-landscape.jpeg'
+import maineLandscape from '../../images/Maine-landscape.jpeg';
 import {
   MDBNavbar,
   MDBNavbarBrand,

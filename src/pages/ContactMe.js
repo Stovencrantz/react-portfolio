@@ -1,16 +1,3 @@
-// import React from 'react';
-
-
-
-// function ContacMe() {
-//   return (
-//       <div>
-//             Now we are in our AboutMe
-//       </div>
-//   );
-//   }
-
-// export default ContacMe;
 
 import React from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
@@ -19,16 +6,14 @@ const ContactMe = () => {
   return (
     <MDBContainer>
       <h2 className="h1-responsive font-weight-bold text-center my-5">
-        Contact us
+        Contact me
       </h2>
       <p className="text-center w-responsive mx-auto pb-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-        error amet numquam iure provident voluptate esse quasi, veritatis
-        totam voluptas nostrum quisquam eum porro a pariatur veniam.
+        If you wish to contact me for any career opportunities, project contributions, or if you wish to contribute to one of my projects, please use the form below!
       </p>
       <MDBRow>
-        <MDBCol md="9" className="md-0 mb-5">
-          <form>
+        <MDBCol md="12" className="md-0 mb-5">
+          <form action="mailto:sknapp143gmail.com" method="POST" encType="text/plain">
             <MDBRow>
               <MDBCol md="6">
                 <div className="md-form mb-0">
@@ -63,28 +48,12 @@ const ContactMe = () => {
                 </div>
               </MDBCol>
             </MDBRow>
+            <div className="text-center text-md-left">
+              <MDBBtn type="submit" color="primary" size="md">
+                Send
+              </MDBBtn>
+            </div>
           </form>
-          <div className="text-center text-md-left">
-            <MDBBtn color="primary" size="md">
-              Send
-            </MDBBtn>
-          </div>
-        </MDBCol>
-        <MDBCol md="3" className="text-center">
-          <ul className="list-unstyled mb-0">
-            <li>
-              <MDBIcon icon="map-marker-alt" size="2x" className="blue-text" />
-              <p>San Francisco, CA 94126, USA</p>
-            </li>
-            <li>
-              <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
-              <p>+ 01 234 567 89</p>
-            </li>
-            <li>
-              <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
-              <p>contact@example.com</p>
-            </li>
-          </ul>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
