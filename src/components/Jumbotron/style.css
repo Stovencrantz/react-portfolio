@@ -1,7 +1,12 @@
-.card{
+.portraitCard{
     height: auto;
     width: auto;
     max-width: 50%;
     max-height: 500px;
-
+    margin-left: 25%
 }
+
+.textCard{
+    margin-right: 25%;
+}
+

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import maineLandscape from '../../images/Maine-landscape.jpeg';
+import AboutMe from "../AboutMe"
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -20,9 +21,7 @@ import {
 import './style.css';
 
 function Home () {
-  // state = {
-  //   collapsed: false
-  // };
+
   const [isCollapsed, setIsCollapsed] = useState({ collapsed: false})
 
   function handleTogglerClick () {
@@ -33,9 +32,6 @@ function Home () {
   useEffect(() => {
     document.querySelector('nav').style.height = '65px';
   }, [])
-  // componentWillUnmount() {
-  //   document.querySelector('nav').style.height = 'auto';
-  // }
 
   const navStyle = { marginTop: '4rem' };
     const overlay = (
@@ -50,8 +46,6 @@ function Home () {
     return (
       <div id='Home'>
         <MDBView
-          // src={'https://mdbootstrap.com/img/Photos/Others/images/76.jpg'}
-          // fixed
           src={maineLandscape}
           fixed
         >
@@ -73,10 +67,9 @@ function Home () {
                 <MDBBtn
                   className='btn-indigo'
                   size='lg'
-                  href='https://mdbootstrap.com/docs/react/css/parallax/'
-                  target='_blank'
+                  href='/aboutme'
                 >
-                  Parallax documentation
+                  About Me
                 </MDBBtn>
               </MDBCol>
             </MDBRow>

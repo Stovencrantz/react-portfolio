@@ -7,16 +7,6 @@ function NavbarPage () {
 
 const [activePill, setActivePill] = useState({activeItemPill: "1"});
 
-// function togglePills () { 
-//   return tab => () => {
-//     if (activePill !== tab) {
-//       return setActivePill({
-//         activeItemPill: tab
-//       })
-//     }
-//   }
-// }
-
 function togglePills (tab) { 
   if (activePill.activeItemPill !== tab) {
     setActivePill({
@@ -50,16 +40,16 @@ function togglePills (tab) {
 
           </MDBNavbarNav>
           <MDBNavbarNav right>
-
-            <MDBNavItem>
-              <MDBNavItem className="waves-effect waves-light" >
-                <a href="https://github.com/Stovencrantz?tab=repositories" target="_blank"> 
-                    <MDBIcon fab icon="github" size = "lg" className="white-text" />
-                </a>
-              </MDBNavItem>
+            <MDBNavItem className="waves-effect waves-light px-3">
+              <a href="https://www.linkedin.com/in/steven-knapp-0b524a81/" target="_blank"> 
+                  <MDBIcon fab icon="linkedin" size = "lg" className="white-text" />
+              </a>
             </MDBNavItem>
-            <MDBNavItem>
-
+            
+            <MDBNavItem className="waves-effect waves-light px-3" > 
+                <a href="https://github.com/Stovencrantz?tab=repositories" target="_blank"> 
+                  <MDBIcon fab icon="github" size = "lg" className="white-text" />
+                </a>
             </MDBNavItem>
           </MDBNavbarNav>
       </MDBNavbar>
