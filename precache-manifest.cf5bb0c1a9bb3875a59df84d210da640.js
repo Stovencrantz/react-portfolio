@@ -1,31 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bca538bc3315fa914f35a4f0c5e613da",
+    "revision": "9f49b157ae01f1993d69eed971292899",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "55d27dc4c2d65218bd30",
+    "revision": "bdea8c0d711fcfa74440",
     "url": "/react-portfolio/static/css/2.793baf1a.chunk.css"
   },
   {
-    "revision": "4a2bff27e0960d2d61b5",
-    "url": "/react-portfolio/static/css/main.07b58e1d.chunk.css"
+    "revision": "e93d2dfa1a4acf4f7845",
+    "url": "/react-portfolio/static/css/main.fd39d11a.chunk.css"
   },
   {
-    "revision": "55d27dc4c2d65218bd30",
-    "url": "/react-portfolio/static/js/2.696f1f99.chunk.js"
+    "revision": "bdea8c0d711fcfa74440",
+    "url": "/react-portfolio/static/js/2.6a107c9c.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/react-portfolio/static/js/2.696f1f99.chunk.js.LICENSE.txt"
+    "url": "/react-portfolio/static/js/2.6a107c9c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a2bff27e0960d2d61b5",
-    "url": "/react-portfolio/static/js/main.ae0253ba.chunk.js"
+    "revision": "e93d2dfa1a4acf4f7845",
+    "url": "/react-portfolio/static/js/main.317a6a7e.chunk.js"
   },
   {
     "revision": "aff33cef9dbb8787d6b3",
     "url": "/react-portfolio/static/js/runtime-main.213b1880.js"
+  },
+  {
+    "revision": "c01d3691ac553436248dc3b4f960ab0b",
+    "url": "/react-portfolio/static/media/Budget-Tracker-Active.c01d3691.png"
+  },
+  {
+    "revision": "da09a465f272077883181b6cc12b82b3",
+    "url": "/react-portfolio/static/media/Budget-Tracker-Items.da09a465.PNG"
+  },
+  {
+    "revision": "67b0eb69658573490e37991d27fe8996",
+    "url": "/react-portfolio/static/media/Budget-Tracker-PWA.67b0eb69.PNG"
+  },
+  {
+    "revision": "6073d95a48fe7bcfce5ccc23ce7fb756",
+    "url": "/react-portfolio/static/media/EatDaBurgerAdd.6073d95a.png"
+  },
+  {
+    "revision": "35ad999878e7bca1a9a5f61bab195ad3",
+    "url": "/react-portfolio/static/media/EatDaBurgerDevoured.35ad9998.png"
+  },
+  {
+    "revision": "585b31557b7918038c53edcda8d91741",
+    "url": "/react-portfolio/static/media/EatDaBurgerMain.585b3155.png"
   },
   {
     "revision": "fcba13f5b23e5aeedfd8af85ea7dd2f5",
@@ -104,11 +128,59 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/media/fa-solid-900.ee09ad75.woff"
   },
   {
+    "revision": "a0b38947363e6deb626ca3c9473272b1",
+    "url": "/react-portfolio/static/media/fitnessTrackDashboardPage.a0b38947.png"
+  },
+  {
+    "revision": "c3595b52c40e764410c5b43c1690bc54",
+    "url": "/react-portfolio/static/media/fitnessTrackExercisePage.c3595b52.png"
+  },
+  {
+    "revision": "eb727e1340d84602a66a8d71f52277db",
+    "url": "/react-portfolio/static/media/fitnessTrackMainPage.eb727e13.png"
+  },
+  {
+    "revision": "da649819d51b62e370e0855fb557199e",
+    "url": "/react-portfolio/static/media/headerSort.da649819.PNG"
+  },
+  {
+    "revision": "98588f0949f2bf55975e07b458a96c18",
+    "url": "/react-portfolio/static/media/heroPageFight.98588f09.png"
+  },
+  {
+    "revision": "97646c420c13bed3668cf59fe1155b44",
+    "url": "/react-portfolio/static/media/heroPageSearch.97646c42.png"
+  },
+  {
+    "revision": "6d2ba06f30be045c1ee7c07aae54398a",
+    "url": "/react-portfolio/static/media/heroPageUniverse.6d2ba06f.png"
+  },
+  {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/react-portfolio/static/media/logo.5d5d9eef.svg"
   },
   {
+    "revision": "05e5f267dbbd8bc19186a62adc1a0eab",
+    "url": "/react-portfolio/static/media/mainPage.05e5f267.PNG"
+  },
+  {
+    "revision": "e55c0949fbdebdcff7c1cf3bb0e99e97",
+    "url": "/react-portfolio/static/media/noteTakerList.e55c0949.png"
+  },
+  {
+    "revision": "f6bf61208af0b8beebfdfe9f814e169e",
+    "url": "/react-portfolio/static/media/noteTakerMain.f6bf6120.png"
+  },
+  {
+    "revision": "670c321f5d8942205f49fcc9ada8936f",
+    "url": "/react-portfolio/static/media/noteTakerNote.670c321f.png"
+  },
+  {
     "revision": "05550bdc164ddc04d2686e8649a2502c",
     "url": "/react-portfolio/static/media/portrait.05550bdc.jpg"
+  },
+  {
+    "revision": "da63dab345cb72e650d985196c78d997",
+    "url": "/react-portfolio/static/media/searchSort.da63dab3.PNG"
   }
 ]);
