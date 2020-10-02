@@ -58,6 +58,14 @@ const CarouselTest = () => {
       {/* Carousel col */}
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <Carousel img={[heroPageSearch, heroPageUniverse, heroPageFight]} />
+            
+              
+            <a href="https://superhero-team.herokuapp.com/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
+            
           </MDBCol>
           {/* total text column */}
           <MDBCol lg="7">
@@ -162,6 +170,12 @@ const CarouselTest = () => {
           </MDBCol>
           <MDBCol lg="5">
             <Carousel img={[mainPage, searchSort, headerSort]} />
+
+            <a href="https://stovencrantz.github.io/employee-directory/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
@@ -171,6 +185,12 @@ const CarouselTest = () => {
         <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <Carousel img={[fitnessTrackMainPage, fintessTrackExercisePage, fitnessTrackDashboardPage]} />
+
+            <a href="https://workout-tracker-sk.herokuapp.com/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
           </MDBCol>
           <MDBCol lg="7">
           <MDBRow>
@@ -290,6 +310,12 @@ const CarouselTest = () => {
           </MDBCol>
           <MDBCol lg="5">
             <Carousel img={[budgetTrackerPWA, budgetTrackerActive, budgetTrackerItems]} />
+
+            <a href="https://budget-tracker-pwa-sk.herokuapp.com/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
@@ -300,6 +326,12 @@ const CarouselTest = () => {
         <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <Carousel img={[noteTakerMain, noteTakerList, noteTakerNote]} />
+
+            <a href="https://note-taker-app-sknapp.herokuapp.com/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
           </MDBCol>
           <MDBCol lg="7">
           <MDBRow>
@@ -408,6 +440,12 @@ const CarouselTest = () => {
           </MDBCol>
           <MDBCol lg="5">
             <Carousel img={[EatDaBurgerMain, EatDaBurgerAdd, EatDaBurgerDevoured]} />
+
+            <a href="https://handlebars-burger-app-knapp.herokuapp.com/" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon icon="leaf" />
+              </MDBBtn>
+            </a>
           </MDBCol>
         </MDBRow>
     </MDBContainer>

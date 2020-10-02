@@ -8,7 +8,7 @@ return (
     <MDBContainer>
         <MDBCarousel activeItem={1} length={3} showControls={true} showIndicators={true}  className="z-depth-1">
         <MDBCarouselInner>
-            <MDBCarouselItem itemId="1">
+            <MDBCarouselItem itemId="1" active>
             <MDBView>
                 <img
                 src={props.img[0]}
