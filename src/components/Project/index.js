@@ -55,91 +55,107 @@ const CarouselTest = () => {
     <MDBContainer>
       {/*  Superhero-team Project */}
     <MDBRow>
+      {/* Carousel col */}
           <MDBCol lg="5" className="mb-lg-0 mb-5">
-            <Carousel img={[heroPageFight, heroPageSearch, heroPageUniverse]} />
+            <Carousel img={[heroPageSearch, heroPageUniverse, heroPageFight]} />
           </MDBCol>
+          {/* total text column */}
           <MDBCol lg="7">
+            {/* title text row + col */}
+            <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Superhero Smackdown</h5>
+                <p className="grey-text">
+                  This application is a static super-hero battle simulator built using a model-view-controller design patter and incorporates user authentication, database storage, and third party API's. The application allows the user to search through our API for any of the 700+ superheroes and villain in their collection and see individual descriptions, biographies, and statistics for each character. The user can then choose to add that hero to their specific "Universe" where they can view all of the characters they have saved. From the universe page the user can select a character to face off against a randomly selected villain in a battle to save the universe in a turn-based battle. 
+                </p>
+                <hr />
+
+              </MDBCol>
+            </MDBRow>
+            {/* HTML5 row */}
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="chart-bar" size="2x" className="indigo-text" />
+                <MDBIcon fab icon="html5" size="2x" className = "red-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Marketing</h5>
+                <h5 className="font-weight-bold mb-3">HTML5</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilize HTML5 to handle the rendering of the static web pages for this application.
                 </p>
               </MDBCol>
             </MDBRow>
+            {/* Bootstrap + CSS row */}
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="music" size="2x" className="pink-text" />
+                <MDBIcon fab icon="bootstrap" size="2x" className = "red-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Entertainment</h5>
+                <h5 className="font-weight-bold mb-3">Bootstrap</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  The Bootstrap library was used to handle the majority of the styling with some specific adjustments made using CSS3.
                 </p>
               </MDBCol>
             </MDBRow>
+            {/* Javascript Row */}
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="smile" size="2x" className="blue-text" />
+                <MDBIcon fab icon="js-square" size="2x" className = "red-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Communication</h5>
+                <h5 className="font-weight-bold mb-3">JavaScript</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  Javscript was used to handle all of the dynamic content for our static we pages as well as being responsible for our controller and models. For the back-end I utilized expressJS to coordinate front-end to back-end communication and our third-party API calls.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            {/* MySQL row */}
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon icon="database" size="2x" className = "red-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">MySQL & Sequelize</h5>
+                <p className="grey-text">
+                  We Utilize MySQL to store user authentication information that is hashed using passport and bcryptJS as well as storing the heroes ties to each individual user.
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
+        {/* ============================================= */}
         {/* Employee-directory app */}
+        {/* ============================================= */}
         <MDBRow>
           <MDBCol lg="7">
+            <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Employee Directory App</h5>
+                <p className="grey-text">
+                  This application is used to search and sort through a set amount of seeded user data obtained through a third party API. Designed to replicate an employee search directory.  
+                </p>
+                <hr />
+              </MDBCol>
+            </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="book" size="2x" className="cyan-text" />
+                <MDBIcon fab icon="react" size="2x" className = "cyan-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Education</h5>
+                <h5 className="font-weight-bold mb-3">React</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilize react to handle a static front-end for the web application.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="code" size="2x" className="red-text" />
+                <MDBIcon fab icon="mdb" size="2x" className = "cyan-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Technology</h5>
+                <h5 className="font-weight-bold mb-3">MDBReact</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
-                </p>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow className="mb-3">
-              <MDBCol md="1" size="2">
-                <MDBIcon far icon="money-bill-alt" size="2x" className="deep-purple-text" />
-              </MDBCol>
-              <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Finance</h5>
-                <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We incorporate the MDBReact library to handle some front-end css, primarily the main page table by storing our data in an interactive data-table.
                 </p>
               </MDBCol>
             </MDBRow>
@@ -149,93 +165,125 @@ const CarouselTest = () => {
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
+        {/* ============================================= */}
         {/* Fitness-tracker app */}
+        {/* ============================================= */}
         <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <Carousel img={[fitnessTrackMainPage, fintessTrackExercisePage, fitnessTrackDashboardPage]} />
           </MDBCol>
           <MDBCol lg="7">
+          <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Fitness Tracker App</h5>
+                <p className="grey-text">
+                  This application is used to search and sort through a set amount of seeded user data obtained through a third party API. Designed to replicate an employee search directory.  
+                </p>
+                <hr />
+              </MDBCol>
+            </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="chart-bar" size="2x" className="indigo-text" />
+                <MDBIcon fab icon="html5" size="2x" className="indigo-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Marketing</h5>
+                <h5 className="font-weight-bold mb-3">HTML5</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilize HTML5 to host the static web-pages for this application. Our landing page is where the user enters their exercises for each day, and the user can access the dashboard page which displays all of the users workout statistcs from the past week in graphical and tabular format.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="music" size="2x" className="pink-text" />
+                <MDBIcon fab icon="bootstrap" size="2x" className="pink-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Entertainment</h5>
+                <h5 className="font-weight-bold mb-3">Bootstrap</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilize the Bootstrap library to handle the css styling of our web-page.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="smile" size="2x" className="blue-text" />
+                <MDBIcon fab icon="js-square" size="2x" className="blue-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Communication</h5>
+                <h5 className="font-weight-bold mb-3">Javascript</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  This application utilizes the model-view-controller pattern along with exrpessJS to take in workout information from the user and store it in a database. We then use mongoose to get and push data from the database to populate our graphs and tables in our dashboard page.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon icon="database" size="2x" className="blue-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">Databases</h5>
+                <p className="grey-text">
+                  For this application we utilized MongoDB and mongoose to handle the storage of data with this application. 
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
+        {/* ============================================= */}
         {/* budget-tracker app */}
+        {/* ============================================= */}
         <MDBRow>
           <MDBCol lg="7">
+          <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Budget Tracker App</h5>
+                <p className="grey-text">
+                  This is a progressive web application (PWA) that allows the user to track debits and expenses and to have a running budget. With this application being a PWA it can be used both online and offline.  
+                </p>
+                <hr />
+              </MDBCol>
+            </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="book" size="2x" className="cyan-text" />
+                <MDBIcon fab icon="html5" size="2x" className="cyan-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Education</h5>
+                <h5 className="font-weight-bold mb-3">HTML5</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We used HTML5 to design the static web pages for this application 
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="code" size="2x" className="red-text" />
+                <MDBIcon fab icon="bootstrap" size="2x" className="red-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Technology</h5>
+                <h5 className="font-weight-bold mb-3">Bootstrap</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilized bootstrap to handle the styling of this application.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="money-bill-alt" size="2x" className="deep-purple-text" />
+                <MDBIcon fab icon="js-square" size="2x" className="deep-purple-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Finance</h5>
+                <h5 className="font-weight-bold mb-3">Javascript</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  Javacript was utilized to create the dynamic content for this application.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon icon="database" size="2x" className="deep-purple-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">Database</h5>
+                <p className="grey-text">
+                  We utilized MongoDB to store our data and utilized mongoose to pass our data back and forth from the fron and back ends.
                 </p>
               </MDBCol>
             </MDBRow>
@@ -244,93 +292,116 @@ const CarouselTest = () => {
             <Carousel img={[budgetTrackerPWA, budgetTrackerActive, budgetTrackerItems]} />
           </MDBCol>
         </MDBRow>
+        <hr className="my-5" />
+
+        {/* ============================================= */}
         {/* note-taker app */}
+        {/* ============================================= */}
         <MDBRow>
           <MDBCol lg="5" className="mb-lg-0 mb-5">
             <Carousel img={[noteTakerMain, noteTakerList, noteTakerNote]} />
           </MDBCol>
           <MDBCol lg="7">
+          <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Note Taker App</h5>
+                <p className="grey-text">
+                  This application allows the user to take notes, save those notes, and view a list of recent notes to keep track of their activites.
+                </p>
+                <hr />
+              </MDBCol>
+            </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="chart-bar" size="2x" className="indigo-text" />
+                <MDBIcon fab icon="html5" size="2x" className="indigo-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Marketing</h5>
+                <h5 className="font-weight-bold mb-3">HTML5</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We use HTML5 to handle the creation of the static web pages for this application.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="music" size="2x" className="pink-text" />
+                <MDBIcon fab icon="bootstrap" size="2x" className="pink-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Entertainment</h5>
+                <h5 className="font-weight-bold mb-3">Bootstrap</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilized bootstrap to handle the styling of this application.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="smile" size="2x" className="blue-text" />
+                <MDBIcon fab icon="js-square" size="2x" className="blue-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Communication</h5>
+                <h5 className="font-weight-bold mb-3">Javascript</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  Javascript was utilized to handle the interactivity on the page, including the button events and the form submission. We also used javascript to make the api calls to get, post, and delete data.
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
-                {/* Burger app */}
-                <MDBRow>
+        {/* ============================================= */}
+        {/* Burger app */}
+        {/* ============================================= */}
+        <MDBRow>
           <MDBCol lg="7">
+          <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Eat-Da-Burger App</h5>
+                <p className="grey-text">
+                  This application is used to show off the abilities of using a MVC pattern and front-end model software, which in this case is Handlebars. The application functions by the user adding a list of burgers they want to eat, which is on the left hand side. When the user click the "Devour Me" button next to the particular burger, it moved to the "Devoured Burgers" list on the right side, storing all the burgers the user ate.  
+                </p>
+                <hr />
+              </MDBCol>
+            </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="book" size="2x" className="cyan-text" />
+                <MDBIcon fab icon="html5" size="2x" className="cyan-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Education</h5>
+                <h5 className="font-weight-bold mb-3">Handlebars</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  For this application we handled our static web pages by utilizing the handlebars tempating language. 
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon icon="code" size="2x" className="red-text" />
+                <MDBIcon fab icon="bootstrap" size="2x" className="red-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Technology</h5>
+                <h5 className="font-weight-bold mb-3">Bootstrap</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We utilized bootstrap to handle the styling of our application.
                 </p>
               </MDBCol>
             </MDBRow>
             <MDBRow className="mb-3">
               <MDBCol md="1" size="2">
-                <MDBIcon far icon="money-bill-alt" size="2x" className="deep-purple-text" />
+                <MDBIcon fab icon="js-square" size="2x" className="deep-purple-text" />
               </MDBCol>
               <MDBCol md="11" size="10">
-                <h5 className="font-weight-bold mb-3">Finance</h5>
+                <h5 className="font-weight-bold mb-3">Javascript</h5>
                 <p className="grey-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
-                  Reprehenderit maiores nam, aperiam minima elit assumenda
-                  voluptate velit.
+                  We used javascript to handle the dynamic content of our webpage and to integrate with handlebars to render our specified html components to the page.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon icon="database" size="2x" className="deep-purple-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">Database</h5>
+                <p className="grey-text">
+                  For this application we utilized MySQL to store our hamburger data and incorporated queries to add and remove burgers from our database. 
                 </p>
               </MDBCol>
             </MDBRow>
