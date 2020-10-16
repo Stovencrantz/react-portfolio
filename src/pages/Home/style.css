@@ -2,3 +2,7 @@
     min-height: 100vh !important;
     height: unset !important;
   }
+
+  h1, h1 span {
+    font-family: 'Great Vibes', cursive;
+  }

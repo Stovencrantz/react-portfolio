@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBLink, MDBNavbarToggler, MDBCollapse, MDBDropdown, MDBIcon, MDBTabPane, MDBTabContent } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
+import "./style.css";
 
 
 function NavbarPage () {

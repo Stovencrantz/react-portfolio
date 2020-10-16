@@ -61,8 +61,14 @@ const CarouselTest = () => {
             
               
             <a href="https://superhero-team.herokuapp.com/" target="_blank">
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
+              </MDBBtn>
+            </a>
+
+            <a href="https://github.com/mvolonnino/superhero_team" target="_blank">
               <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+                <MDBIcon fab icon="github-square" size="2x" />
               </MDBBtn>
             </a>
             
@@ -172,10 +178,17 @@ const CarouselTest = () => {
             <Carousel img={[mainPage, searchSort, headerSort]} />
 
             <a href="https://stovencrantz.github.io/employee-directory/" target="_blank">
-              <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
               </MDBBtn>
             </a>
+
+            <a href="https://github.com/Stovencrantz/employee-directory" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
@@ -187,10 +200,17 @@ const CarouselTest = () => {
             <Carousel img={[fitnessTrackMainPage, fintessTrackExercisePage, fitnessTrackDashboardPage]} />
 
             <a href="https://workout-tracker-sk.herokuapp.com/" target="_blank">
-              <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
               </MDBBtn>
             </a>
+
+            <a href="https://github.com/Stovencrantz/Workout-Tracker" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+
           </MDBCol>
           <MDBCol lg="7">
           <MDBRow>
@@ -312,10 +332,17 @@ const CarouselTest = () => {
             <Carousel img={[budgetTrackerPWA, budgetTrackerActive, budgetTrackerItems]} />
 
             <a href="https://budget-tracker-pwa-sk.herokuapp.com/" target="_blank">
-              <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
               </MDBBtn>
             </a>
+
+            <a href="https://github.com/Stovencrantz/Budget-Tracker-PWA" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+            
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
@@ -328,10 +355,17 @@ const CarouselTest = () => {
             <Carousel img={[noteTakerMain, noteTakerList, noteTakerNote]} />
 
             <a href="https://note-taker-app-sknapp.herokuapp.com/" target="_blank">
-              <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
               </MDBBtn>
             </a>
+
+            <a href="https://github.com/Stovencrantz/Note-Taker-App" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+
           </MDBCol>
           <MDBCol lg="7">
           <MDBRow>
@@ -440,12 +474,19 @@ const CarouselTest = () => {
           </MDBCol>
           <MDBCol lg="5">
             <Carousel img={[EatDaBurgerMain, EatDaBurgerAdd, EatDaBurgerDevoured]} />
-
+      
             <a href="https://handlebars-burger-app-knapp.herokuapp.com/" target="_blank">
-              <MDBBtn tag="a" floating gradient="blue">
-                <MDBIcon icon="leaf" />
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
               </MDBBtn>
             </a>
+
+            <a href="https://github.com/Stovencrantz/Burger-App" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+
           </MDBCol>
         </MDBRow>
     </MDBContainer>
