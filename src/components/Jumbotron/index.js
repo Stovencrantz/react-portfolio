@@ -24,13 +24,13 @@ const Jumbotron = () => {
 
       <MDBJumbotron
         style={{
-          borderRadius: "10%",
+          borderRadius: "50px",
           borderStyle: "solid",
-          borderColor: "blue",
+          borderColor: "#ac7339",
           backgroundColor: "transparent",
         }}
       >
-        <MDBMask  overlay="grey-strong"/>
+        {/* <MDBMask  overlay="grey-strong"/> */}
         <MDBRow className=" text-center">
           <MDBCol>
             <MDBCard className="portraitCard">
@@ -43,8 +43,7 @@ const Jumbotron = () => {
                 <MDBCardText>
                   <strong>Welcome!</strong> Thank you for visiting my personal
                   portfolio site, please allow me to introduce myself. My name
-                  is Steve Knapp and I am a software developer that specialized
-                  in front-end and back-end web technologies.
+                  is Steve Knapp and I am a software developer with experience in full-stack web applications.
                 </MDBCardText>
                 <hr />
                 <MDBCardText>
@@ -64,6 +63,9 @@ const Jumbotron = () => {
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
+        </MDBRow>
+        <MDBRow>
+
         </MDBRow>
       </MDBJumbotron>
       </MDBView>

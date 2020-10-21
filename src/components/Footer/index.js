@@ -17,13 +17,13 @@ const Footer = () => {
             <h5 className="title">Directory</h5>
             <ul>
               <li className="list-unstyled">
-                <MDBLink to="#!">About Me</MDBLink>
+                <MDBLink to="/aboutme">About Me</MDBLink>
               </li>
               <li className="list-unstyled">
-                <MDBLink to="#!">Projects</MDBLink>
+                <MDBLink to="/projects">Projects</MDBLink>
               </li>
               <li className="list-unstyled">
-                <MDBLink to="#!">Contact Me</MDBLink>
+                <MDBLink to="/contactme">Contact Me</MDBLink>
               </li>
             </ul>
           </MDBCol>

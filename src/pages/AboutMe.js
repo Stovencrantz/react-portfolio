@@ -17,9 +17,9 @@ function AboutMe() {
               className='d-flex justify-content-center align-items-center'
               style={{ height: '100%', width: '100%', paddingTop: '15rem' }}
             >
-              <MDBRow className= 'text-center'>
+              {/* <MDBRow className= 'text-center'> */}
                   <Jumbotron />
-              </MDBRow>
+              {/* </MDBRow> */}
             </MDBContainer>
           </MDBView>
         </div>

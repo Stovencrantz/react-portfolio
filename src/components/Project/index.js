@@ -3,6 +3,11 @@ import portrait from "../../images/portrait.jpg"
 import mainePortrait from "../../images/Maine-portrait.jpeg"
 import maineLandscape from "../../images/Maine-landscape.jpeg"
 import Carousel from "../Carousel"
+// superhero-throwdown-react images
+import superheroThrowdownSearch from "../../images/superhero-throwdown-react/superheroThrowdownSearch.png";
+import superheroThrowdownUniverse from "../../images/superhero-throwdown-react/superheroThrowdownUniverse.png";
+import superheroThrowdownFight from "../../images/superhero-throwdown-react/superheroThrowdownFight.png"
+
 // Hero-team images
 import heroPageFight from "../../images/superhero-team/heroPageFight.png"
 import heroPageSearch from "../../images/superhero-team/heroPageSearch.png"
@@ -53,7 +58,97 @@ const CarouselTest = () => {
         </p>
 
     <MDBContainer>
-      {/*  Superhero-team Project */}
+    {/* ============================================= */}
+    {/*  Superhero-throwdown-react Project */ }
+    {/* ============================================= */}
+    <MDBRow>
+
+          {/* total text column */}
+          <MDBCol lg="7">
+            {/* title text row + col */}
+            <MDBRow>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3 text-center">Superhero Throwdown</h5>
+                <p className="grey-text">
+                  This application is a new rendition of my previous "Superhero Smackdown" application, that was developed as a full MERN application. The functionality of this application mirrors the previous, with the inclusion of some major UI upgrades and some quality of life fixes that were not present in the past application. Some changes include: The use of parallax image effects for each apge to remove unnecessary white space and give the user the feeling of a universal scale. Interactive animations on each card that allows the user to alternate between a "front-side" and "back-side" of each card in our universe page to see different stats. Some additional stats have been included to our cards as well, including height, weight, and race. Our search page now allows the user to see even more detailed information from a "Field Report" for that specific hero when the user clicks the "More info" button. This application was built using the React framework to handle the front-end design of this site, while nodeJS/express was used for the back-end server side of the site. We utilized MongoDB and mongoose to manage our database which holds our hero, villain, and user data.
+                </p>
+                <hr />
+
+              </MDBCol>
+            </MDBRow>
+            {/* React row */}
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon fab icon="react" size="2x" className = "red-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">React</h5>
+                <p className="grey-text">
+                  We utilized the React framework to handle the front-end design of this application.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            {/* MDBReact + CSS row */}
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon fab icon="mdb" size="2x" className = "red-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">MDBReact</h5>
+                <p className="grey-text">
+                  The MDBReact library was used to handle the majority of the styling on our front-end with some specific adjustments made using CSS3.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            {/* NodeJS Row */}
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon fab icon="node-js" size="2x" className = "red-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">NodeJS</h5>
+                <p className="grey-text">
+                  NodeJS and Express were used on the back-end to coordinate front-end to back-end communication and to handle our third-party API calls.
+                </p>
+              </MDBCol>
+            </MDBRow>
+            {/* MongoDB row */}
+            <MDBRow className="mb-3">
+              <MDBCol md="1" size="2">
+                <MDBIcon icon="database" size="2x" className = "red-text" />
+              </MDBCol>
+              <MDBCol md="11" size="10">
+                <h5 className="font-weight-bold mb-3">MongoDB & Mongoose</h5>
+                <p className="grey-text">
+                  We Utilize MongoDB to store our user, hero, and villain data while handling query calls to our database with Mongoose ODM. For authentication we also integrated passport and bycryptjs with our MongoDB users collection to check if a user was already a member of our site and if not, to redirect them to the sign-up page.
+                </p>
+              </MDBCol>
+            </MDBRow>
+          </MDBCol>
+                {/* Carousel col */}
+                <MDBCol lg="5" className="mb-lg-0 mb-5">
+            <Carousel img={[superheroThrowdownSearch, superheroThrowdownUniverse, superheroThrowdownFight]} />
+            
+              
+            <a href="https://superhero-throwdown.herokuapp.com/" target="_blank">
+              <MDBBtn floating  >
+                <MDBIcon far icon="file" size="2x" />
+              </MDBBtn>
+            </a>
+
+            <a href="https://github.com/egibbs834/Superhero-Throwdown-React" target="_blank">
+              <MDBBtn tag="a" floating gradient="blue">
+                <MDBIcon fab icon="github-square" size="2x" />
+              </MDBBtn>
+            </a>
+            
+          </MDBCol>
+        </MDBRow>
+        <hr className="my-5" />
+        {/* ============================================= */}
+        {/*  Superhero-team Project */}
+        {/* ============================================= */}
+      
     <MDBRow>
       {/* Carousel col */}
           <MDBCol lg="5" className="mb-lg-0 mb-5">

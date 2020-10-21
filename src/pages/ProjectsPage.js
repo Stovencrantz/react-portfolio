@@ -6,7 +6,7 @@ import Projects from "../components/Project"
 function ProjectsPage() {
   return (
     <div>
-      <Projects />
+      <Projects  />
     </div>
   )
 }
