@@ -1,7 +1,8 @@
 
 import React from "react";
-import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
+import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput, MDBCard, MDBCardHeader, MDBCardImage, MDBLink } from "mdbreact";
 import Form from "../components/Form"
+import ResumeImg from "../images/resume/resumeImg.png"
 
 const ContactMe = () => {
   return (
@@ -32,6 +33,17 @@ const ContactMe = () => {
             </li>
           </ul>
         </MDBCol>
+      </MDBRow>
+      <MDBRow>
+        {/* ENter resume here */}
+        <MDBCard>
+        <MDBCard className="resumeCard">
+          <MDBCardHeader><strong>My Resume</strong></MDBCardHeader>
+            <a href="https://drive.google.com/file/d/1DXL8rzVsSYqRHtXmMeilKwOG6PiqYWz_/view?usp=sharing" target="_blank">
+               <MDBCardImage className="img-thumbnail myImage" src={ResumeImg} />
+              </a>
+            </MDBCard>
+        </MDBCard>
       </MDBRow>
     </MDBContainer>
   );
