@@ -20,18 +20,19 @@ import {
 
 const Jumbotron = () => {
   return (
-    <MDBView className="jumbotronView">
+    // <MDBView className="jumbotronView">
 
-      <MDBJumbotron
-        style={{
-          borderRadius: "50px",
-          borderStyle: "solid",
-          borderColor: "#ac7339",
-          backgroundColor: "transparent",
-        }}
+      <MDBJumbotron className="aboutMeJumbo shadow-box-example z-depth-5"
+        // style={{
+        //   backgroundColor: "white",
+        //   borderRadius: "50px",
+        //   borderStyle: "solid",
+        //   borderColor: "#ac7339",
+        
+        // }}
       >
         {/* <MDBMask  overlay="grey-strong"/> */}
-        <MDBRow className=" text-center">
+        <MDBRow className=" text-center ">
           <MDBCol>
             <MDBCard className="portraitCard">
               <MDBCardImage className="img-thumbnail myImage" src={portrait} />
@@ -64,11 +65,15 @@ const Jumbotron = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-        <MDBRow>
-
+        <MDBRow className="justify-content-center align-items-center mt-3">
+          <MDBCard>
+            <MDBCardText>
+              Hello World
+            </MDBCardText>
+          </MDBCard>
         </MDBRow>
       </MDBJumbotron>
-      </MDBView>
+      // </MDBView>
 
   );
 };

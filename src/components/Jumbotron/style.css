@@ -1,13 +1,23 @@
+.aboutMeJumbo  {
+    /* background-color: white; */
+    background: rgba(157, 157, 173, 0.75);
+    border-radius: 50px;
+    /* border-style: solid; */
+    /* border-color: #ac7339; */
+}
+
 .portraitCard{
-    height: auto;
+    position: relative;
+    height: auto ;
     width: auto;
     max-width: 340px;
-    /* max-height: 500px; */
     max-height: 100%;
     margin-left: 25%
 }
 
+
 .textCard{
+    position: relative;
     margin-right: 25%;
 }
 

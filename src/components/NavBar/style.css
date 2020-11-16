@@ -2,3 +2,8 @@
     font-family: 'Great Vibes', cursive;
     font-size: 34px;
 }
+
+.navbar-collapse {
+    z-index: 1000;
+    background-color: rgb(43 187 173) !important;
+}

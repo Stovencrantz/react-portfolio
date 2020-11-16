@@ -9,8 +9,7 @@ const Footer = () => {
           <MDBCol md="6">
             <h5 className="title">Portfolio</h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content.
+              Welcome to my portfolio, please feel free to look around! 
             </p>
           </MDBCol>
           <MDBCol md="6">

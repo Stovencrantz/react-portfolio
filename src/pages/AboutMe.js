@@ -15,11 +15,9 @@ function AboutMe() {
             <MDBMask className='rgba-white-light' />
             <MDBContainer
               className='d-flex justify-content-center align-items-center'
-              style={{ height: '100%', width: '100%', paddingTop: '15rem' }}
+              style={{ paddingTop: '10rem'}}
             >
-              {/* <MDBRow className= 'text-center'> */}
                   <Jumbotron />
-              {/* </MDBRow> */}
             </MDBContainer>
           </MDBView>
         </div>
