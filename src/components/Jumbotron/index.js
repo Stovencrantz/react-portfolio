@@ -20,18 +20,8 @@ import {
 
 const Jumbotron = () => {
   return (
-    // <MDBView className="jumbotronView">
-
-      <MDBJumbotron className="aboutMeJumbo shadow-box-example z-depth-5"
-        // style={{
-        //   backgroundColor: "white",
-        //   borderRadius: "50px",
-        //   borderStyle: "solid",
-        //   borderColor: "#ac7339",
-        
-        // }}
-      >
-        {/* <MDBMask  overlay="grey-strong"/> */}
+    <div style={{height: "85vh"}}>
+        <h1 style={{fontWeight: "strong"}}>About Me</h1>
         <MDBRow className=" text-center ">
           <MDBCol>
             <MDBCard className="portraitCard">
@@ -41,11 +31,10 @@ const Jumbotron = () => {
           <MDBCol>
             <MDBCard className="textCard">
               <MDBCardBody>
-                <MDBCardText>
-                  <strong>Welcome!</strong> Thank you for visiting my personal
-                  portfolio site, please allow me to introduce myself. My name
+                <MDBCardTitle >
+                  <strong>Welcome!</strong> My name
                   is Steve Knapp and I am a software developer with experience in full-stack web applications.
-                </MDBCardText>
+                </MDBCardTitle>
                 <hr />
                 <MDBCardText>
                   I have previous experience working in the manufacturing
@@ -72,8 +61,8 @@ const Jumbotron = () => {
             </MDBCardText>
           </MDBCard>
         </MDBRow>
-      </MDBJumbotron>
-      // </MDBView>
+        </div>
+
 
   );
 };

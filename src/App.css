@@ -1,6 +1,12 @@
 .App {
   text-align: center;
+  background-color: rgba(183, 193, 202, 0.397);
 }
+
+.vibesFont {
+    font-family: 'Great Vibes', cursive;
+}
+
 
 .App-logo {
   height: 40vmin;
