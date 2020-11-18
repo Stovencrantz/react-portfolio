@@ -11,27 +11,12 @@ function AboutMe() {
   useEffect(() => {
     setNavTabContext({ activeNav: window.location.pathname })
     console.log("useeffect activated: ", navTabContext.activeNav)
-    // setActivePill({ activeItemPill: window.location.pathname})
 
   }, [])
 
   return (
-        //   <div id='aboutMe'>
-        //   <MDBView
-        //     src={aboutMeBackground}
-        //     fixed
-        //   >
-        //     <MDBMask className='rgba-white-light' />
-        //     <MDBContainer
-        //       className='d-flex justify-content-center align-items-center'
-        //       style={{ paddingTop: '10rem'}}
-        //     >
-        //           <Jumbotron />
-        //     </MDBContainer>
-        //   </MDBView>
-        // </div>
     <>
-      <div className="vibesFont pt-5 ml-5 text-left" style={{fontWeight: "strong", fontSize: "5rem"}}>About Me</div>
+      <h1 className="vibesFont pt-5 ml-5 text-left" style={{fontWeight: "bold", fontSize: "5rem"}}>About Me</h1>
 
       <MDBContainer className='d-flex justify-content-center align-items-center'
         style={{ paddingTop: '5rem'}}>
