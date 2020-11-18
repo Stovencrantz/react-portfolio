@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.b07cdb3d.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.73b183db.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.73b183db.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.86084a81.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.85e5e58f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.85e5e58f.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.213b1880.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.213b1880.js.map",
     "static/css/2.793baf1a.chunk.css": "/react-portfolio/static/css/2.793baf1a.chunk.css",
-    "static/js/2.1de5a493.chunk.js": "/react-portfolio/static/js/2.1de5a493.chunk.js",
-    "static/js/2.1de5a493.chunk.js.map": "/react-portfolio/static/js/2.1de5a493.chunk.js.map",
+    "static/js/2.a351f2ab.chunk.js": "/react-portfolio/static/js/2.a351f2ab.chunk.js",
+    "static/js/2.a351f2ab.chunk.js.map": "/react-portfolio/static/js/2.a351f2ab.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.9f0a0fd1975331601b84544ba1ca2dce.js": "/react-portfolio/precache-manifest.9f0a0fd1975331601b84544ba1ca2dce.js",
+    "precache-manifest.a4dd0d4085346860e53c243c37d51a74.js": "/react-portfolio/precache-manifest.a4dd0d4085346860e53c243c37d51a74.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
     "static/css/2.793baf1a.chunk.css.map": "/react-portfolio/static/css/2.793baf1a.chunk.css.map",
-    "static/css/main.b07cdb3d.chunk.css.map": "/react-portfolio/static/css/main.b07cdb3d.chunk.css.map",
-    "static/js/2.1de5a493.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.1de5a493.chunk.js.LICENSE.txt",
+    "static/css/main.86084a81.chunk.css.map": "/react-portfolio/static/css/main.86084a81.chunk.css.map",
+    "static/js/2.a351f2ab.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.a351f2ab.chunk.js.LICENSE.txt",
     "static/media/Budget-Tracker-Active.png": "/react-portfolio/static/media/Budget-Tracker-Active.c01d3691.png",
     "static/media/Budget-Tracker-Items.PNG": "/react-portfolio/static/media/Budget-Tracker-Items.da09a465.PNG",
     "static/media/Budget-Tracker-PWA.PNG": "/react-portfolio/static/media/Budget-Tracker-PWA.67b0eb69.PNG",
@@ -47,8 +47,8 @@
   "entrypoints": [
     "static/js/runtime-main.213b1880.js",
     "static/css/2.793baf1a.chunk.css",
-    "static/js/2.1de5a493.chunk.js",
-    "static/css/main.b07cdb3d.chunk.css",
-    "static/js/main.73b183db.chunk.js"
+    "static/js/2.a351f2ab.chunk.js",
+    "static/css/main.86084a81.chunk.css",
+    "static/js/main.85e5e58f.chunk.js"
   ]
 }
