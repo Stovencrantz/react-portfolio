@@ -1,10 +1,21 @@
 
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput, MDBCard, MDBCardHeader, MDBCardImage, MDBLink } from "mdbreact";
 import Form from "../components/Form"
 import ResumeImg from "../images/resume/resumeImg.png"
+import NavigationContext from "../context/navigationContex"
+
 
 const ContactMe = () => {
+  const { navTabContext, setNavTabContext } = useContext(NavigationContext); 
+  useEffect(() => {
+    setNavTabContext({ activeNav: window.location.pathname })
+    console.log("useeffect activated: ", navTabContext.activeNav)
+
+    // setActivePill({ activeItemPill: window.location.pathname})
+
+  }, [])
+
   return (
     <MDBContainer style={{ height: "100vh"}}>
       <h2 className="h1-responsive font-weight-bold text-center my-5">

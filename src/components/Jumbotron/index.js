@@ -21,7 +21,6 @@ import {
 const Jumbotron = () => {
   return (
     <div style={{height: "85vh"}}>
-        <h1 style={{fontWeight: "strong"}}>About Me</h1>
         <MDBRow className=" text-center ">
           <MDBCol>
             <MDBCard className="portraitCard">

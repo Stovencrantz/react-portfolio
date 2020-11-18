@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Jumbotron from "./components/Jumbotron";
@@ -11,11 +11,17 @@ import Home from "./pages/Home/Home";
 import NoMatch from "./pages/NoMatch";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { FormspreeProvider } from "@formspree/react";
+import NavigationContext from "./context/navigationContex";
 
 function App() {
+
+  const [ navTabContext, setNavTabContext ] = useState({ activeNav: "" });
+
+
   return (
     <Router>
       <FormspreeProvider project="{react-portfolio}">
+        <NavigationContext.Provider value={{navTabContext, setNavTabContext}}>
         <div className="App">
           <Navbar />
           <Switch>
@@ -25,9 +31,9 @@ function App() {
             <Route exact path="/contactme" component={ContactMe} />
             <Route component={NoMatch} />
           </Switch>
-
           <Footer />
         </div>
+        </NavigationContext.Provider>
       </FormspreeProvider>
     </Router>
   );

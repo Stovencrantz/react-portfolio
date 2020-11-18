@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react";
+import { BrowserRouter as Router, route } from "react-router-dom";
 import maineLandscape from "../../images/Maine-landscape.jpeg";
 import AboutMe from "../AboutMe";
+import NavigationContext from "../../context/navigationContex";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -24,15 +25,22 @@ import "./style.css";
 
 function Home() {
   const [isCollapsed, setIsCollapsed] = useState({ collapsed: false });
+  const { navTabContext, setNavTabContext } = useContext(NavigationContext);
+  const { collapsed } = isCollapsed;
 
   function handleTogglerClick() {
     setIsCollapsed({
       collapsed: !isCollapsed.collapsed,
     });
   }
-
+  useEffect(() => {
+    console.log("path: ", window.location.pathname)
+    setNavTabContext({ activeNav: "/"});
+    
+  }, [])
 
   const navStyle = { marginTop: "4rem" };
+
   const overlay = (
     <div
       id="sidenav-overlay"
@@ -41,14 +49,14 @@ function Home() {
     />
   );
 
-  const { collapsed } = isCollapsed;
+
   return (
     <div id="Home">
       <MDBView src={maineLandscape} fixed>
         <MDBMask overlay="stylish-strong" />
         <MDBContainer
           className="d-flex justify-content-center align-items-center"
-          style={{ height: "100%", width: "100%", paddingTop: "15rem" }}
+          style={{ height: "100%", width: "100%", paddingTop: "8rem" }}
         >
           <MDBRow>
             <MDBCol md="12" className="mb-4  text-center">
@@ -64,7 +72,7 @@ function Home() {
               {/* <h3 className="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 font-weight-bold" style={{color: "navy"}}>
                 SOFTWARE DEVELOPER
               </h3> */}
-              <MDBLink to="/aboutme">
+              <MDBLink to="/aboutme" onClick={() => setNavTabContext({ activeNav: "/aboutme" })}>
                 <MDBBtn className="btn-indigo" size="lg">
                   Learn About Me 
                   <span> <MDBIcon far icon="arrow-alt-circle-right" /></span>

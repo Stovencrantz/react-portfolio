@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -15,27 +16,17 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
+import NavigationContext from "../../context/navigationContex";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./style.css";
 
 function NavbarPage() {
-  const [activePill, setActivePill] = useState({ activeItemPill: "1" });
+  const { navTabContext, setNavTabContext } = useContext(NavigationContext);
   const [collapse, setCollapse] = useState({ isOpen: false });
-
-  function togglePills(tab) {
-    if (activePill.activeItemPill !== tab) {
-      setActivePill({
-        activeItemPill: tab,
-      });
-    }
-    console.log("activePill: ", activePill.activeItemPill);
-
-    console.log("tab: ", tab);
-  }
 
   const toggleCollapse = () => {
     setCollapse({ isOpen: !collapse.isOpen });
-    console.log("Navbar toggle status: ", collapse.isOpen)
+    console.log("Navbar toggle status: ", collapse.isOpen);
   };
 
   return (
@@ -48,29 +39,25 @@ function NavbarPage() {
         <MDBNavbarNav left>
           <MDBNavItem
             className="tab tabId-1"
-            active={activePill.activeItemPill === "1"}
-            onClick={() => togglePills("1")}
+            active={navTabContext.activeNav === "/"}
           >
             <MDBLink to="/">Home</MDBLink>
           </MDBNavItem>
           <MDBNavItem
             className="tab tabId-2"
-            active={activePill.activeItemPill === "2"}
-            onClick={() => togglePills("2")}
+            active={navTabContext.activeNav === "/aboutme"}
           >
             <MDBLink to="/aboutme">About Me</MDBLink>
           </MDBNavItem>
           <MDBNavItem
             className="tab tabId-3"
-            active={activePill.activeItemPill === "3"}
-            onClick={() => togglePills("3")}
+            active={navTabContext.activeNav === "/projects"}
           >
             <MDBLink to="/projects">Projects</MDBLink>
           </MDBNavItem>
           <MDBNavItem
             className="tab tabId-4"
-            active={activePill.activeItemPill === "4"}
-            onClick={() => togglePills("4")}
+            active={navTabContext.activeNav === "/contactme"}
           >
             <MDBLink to="/contactme">Contact Me</MDBLink>
           </MDBNavItem>
