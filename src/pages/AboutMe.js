@@ -15,10 +15,10 @@ function AboutMe() {
     <>
       <MDBContainer
         className=" justify-content-center align-items-center"
-        style={{ paddingTop: "5rem", minHeight: "100vh" }}
+        style={{ paddingTop: "2rem", minHeight: "100vh" }}
       >
         <h1
-          className="vibesFont pt-5 ml-5 text-left"
+          className="vibesFont py-3 ml-5 text-left"
           style={{ fontWeight: "bold", fontSize: "5rem" }}
         >
           About Me
