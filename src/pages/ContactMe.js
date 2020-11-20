@@ -17,7 +17,7 @@ const ContactMe = () => {
   }, [])
 
   return (
-    <MDBContainer style={{ height: "100vh"}}>
+    <MDBContainer style={{ minHeight: "100vh"}}>
       <h2 className="h1-responsive font-weight-bold text-center my-5">
         Contact me
       </h2>

@@ -2,6 +2,11 @@ import React from "react";
 import mainePortrait from "../../images/Maine-portrait.jpeg";
 import portrait from "../../images/portrait.jpg";
 import "./style.css";
+import projectMgmtIcon from "../../images/skillsIcons/projectMgmt.png";
+import innovationIcon from "../../images/skillsIcons/innovation.png";
+import clientRelationsIcon from "../../images/skillsIcons/clientRelations.png";
+import responsiveDesignIcon from "../../images/skillsIcons/responsiveDesign.png"
+import mobileFirstIcon from "../../images/skillsIcons/mobileFirst.png";
 import {
   MDBJumbotron,
   MDBBtn,
@@ -38,7 +43,7 @@ const Jumbotron = () => {
       icon: <MDBIcon fab icon="react" size="3x"/> }
   ];
   return (
-    <div style={{ height: "85vh" }}>
+    <div>
       <MDBRow className="mb-4">
         <MDBCol className="">
           {/* Image here */}
@@ -88,6 +93,61 @@ const Jumbotron = () => {
           );
         })}
         </MDBRow>
+      </MDBRow>
+      <MDBRow>
+        <MDBCol>
+        <h1 className = "text-center">Professional Skillset</h1>
+        {/* Project management skill */}
+          <MDBRow className="align-items-center justify-items-center">
+            <MDBCol >
+              <img className="iconImg" src={projectMgmtIcon} alt="project management icon" />
+            </MDBCol>
+            <MDBCol >
+              <h1 className="text-left">Project Mangagement</h1>
+              <p className="text-left">Spearheading the management of project at all stages from bid to completion, executing each individual stage efficiently and satisfactory within deadlines.</p>
+            </MDBCol>
+          </MDBRow>
+          <hr />
+          <MDBRow className="align-items-center justify-items-center">
+            <MDBCol>
+              <img className="iconImg" src={innovationIcon} alt="project management icon" />
+            </MDBCol>
+            <MDBCol >
+              <h1 className="text-left">Innovation</h1>
+              <p className="text-left">Successfully implementing out of the box ideas into current production schema with a demonstratable improvement in quality of life, improved efficiency, reduced production time, and reduced costs.</p>
+            </MDBCol>
+          </MDBRow>
+          <hr />
+          <MDBRow className="align-items-center justify-items-center">
+            <MDBCol>
+              <img className="iconImg" src={clientRelationsIcon} alt="project management icon" />
+            </MDBCol>
+            <MDBCol >
+              <h1 className="text-left">Client Relations</h1>
+              <p className="text-left">Able to work directly with clients and work with them to achieve their desired product within constrained deadlines. </p>
+            </MDBCol>
+          </MDBRow>
+          <hr />
+          <MDBRow className="align-items-center justify-items-center">
+            <MDBCol>
+              <img className="iconImg" src={responsiveDesignIcon} alt="project management icon" />
+            </MDBCol>
+            <MDBCol >
+              <h1 className="text-left">Responsive Design</h1>
+              <p className="text-left">Designing dynamic applications that will adapt to the needs of the client and their users in real time.</p>
+            </MDBCol>
+          </MDBRow>
+          <hr />
+          <MDBRow className="align-items-center justify-items-center">
+            <MDBCol>
+              <img className="iconImg" src={mobileFirstIcon} alt="project management icon" />
+            </MDBCol>
+            <MDBCol >
+              <h1 className="text-left">Mobile First Applications</h1>
+              <p className="text-left">Priority in designing applications to support a wide range of mobile devices as well as desktops to provide a greater range of service to the client.</p>
+            </MDBCol>
+          </MDBRow>
+        </MDBCol>
       </MDBRow>
     </div>
   );
