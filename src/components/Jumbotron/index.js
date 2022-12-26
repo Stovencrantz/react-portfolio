@@ -33,6 +33,7 @@ const Jumbotron = () => {
     { tech: "MySQL", icon: <MDBIcon icon="database" size="3x" /> },
     { tech: "MongoDB", icon: <MDBIcon icon="database" size="3x" /> },
     { tech: "React", icon: <MDBIcon fab icon="react" size="3x" /> },
+    { tech: "Wordpress", icon: <MDBIcon fab icon="wordpress" size="3x" /> },
   ];
   return (
     <div>
